@@ -146,3 +146,10 @@ def update_article(article_UID: int, article_update: ArticleUpdate, db: Session 
 
     db.commit()
     return {"message": "Article updated successfully"}
+
+
+# This line starts the FastAPI server
+if __name__ == "__main__":
+    # http://127.0.0.1:8000/docs
+    import uvicorn
+    uvicorn.run(app, host="127.0.0.1", port=8000)
