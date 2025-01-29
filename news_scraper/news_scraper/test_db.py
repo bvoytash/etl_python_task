@@ -8,12 +8,12 @@ Session = sessionmaker(bind=engine)
 session = Session()
 
 article = NewsArticle(
-    title="New Title",
-    url="http://example.com/second_example/boro",
-    author="Test Author",
+    title="New Title 1",
+    url="http://example.com/second_example/boro/asd",
+    author="Test Author a",
     publication_date=datetime.now(),
-    image_urls="http://smotana-rabota.jpg",
-    body="This is a test article.",
+    image_urls="http://smotana-rabota_01.jpg",
+    body="This is a test article.A.",
     ner_entities='{"entity": "test"}'
 )
 
